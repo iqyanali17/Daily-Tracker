@@ -1,5 +1,5 @@
-
-import { Briefcase, Dumbbell, MonitorPlay, BookOpen, Clock, Activity, type ElementType } from 'lucide-react';
+import { type ElementType } from 'react';
+import { Briefcase, Dumbbell, MonitorPlay, BookOpen, Clock, Activity } from 'lucide-react';
 
 export const categoryConfig: Record<string, { icon: ElementType; color: string; bg: string; border: string; hex: string }> = {
   Work: { icon: Briefcase, color: 'text-indigo-600', bg: 'bg-indigo-100/80', border: 'border-indigo-200', hex: '#4f46e5' },

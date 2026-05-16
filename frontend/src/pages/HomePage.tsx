@@ -1,5 +1,5 @@
 
-import { useState, useMemo, useEffect, type MouseEvent, type ElementType } from 'react';
+import { useState, useMemo, useEffect, type MouseEvent } from 'react';
 import { motion, type Variants, AnimatePresence } from 'framer-motion';
 import { useAuthStore } from '../store/useAuthStore';
 import { useActivitiesStore } from '../store/useActivitiesStore';

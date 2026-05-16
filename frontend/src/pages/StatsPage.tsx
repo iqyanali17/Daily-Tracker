@@ -152,8 +152,8 @@ export const StatsPage = () => {
               <h3 className="text-xl font-black text-gray-900 dark:text-white mb-8 flex items-center gap-2">
                 <TrendingUp size={20} className="text-purple-500" /> Weekly Activity Distribution
               </h3>
-              <div className="h-[350px] w-full">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[350px] w-full min-h-[350px]">
+                <ResponsiveContainer width="100%" height="100%" debounce={50}>
                   <BarChart data={barData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
                     <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                     <XAxis 
@@ -220,8 +220,8 @@ export const StatsPage = () => {
               className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-2xl border border-white dark:border-gray-800 p-8 rounded-[2.5rem] shadow-sm h-full"
             >
               <h3 className="text-xl font-black text-gray-900 dark:text-white mb-4">Category Focus</h3>
-              <div className="h-[300px] w-full relative">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="h-[300px] w-full min-h-[300px] relative">
+                <ResponsiveContainer width="100%" height="100%" debounce={50}>
                   <PieChart>
                     <Pie
                       data={pieData}
